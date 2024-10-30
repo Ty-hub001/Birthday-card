@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+        .card {
+            background-image: url(bak2.jpg) ;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        p {
+            font-size: 18px;
+        }
+        #aya {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        #ay2 {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+        #birthday-message {
+            display: none;
+            font-weight: bold;
+        }
+        button {
+            background-image: url(bak111.gif);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Birthday<br>
+        Mi Amor!
+        </h1>
+        <img id="ay2" src="ay2.jpg" alt="ay2">
+        <button id="show-message">🎁Open Your Gift</button>
+            <p id="birthday-message">🎉🎁🎂 Surprise! It's a virtual birthday card made just for you!<br> 
+            <br>Dear Friend,<br>
+            Wishing you a day filled with joy and laughter. May all your dreams and wishes come true!<br>
+            <br>Let's celebrate and make this day special.
+            <img id="aya" src="aya.jpg" alt="aya">
+            </p>
+    </div>
+
+    <script>
+        document.getElementById('show-message').addEventListener('click', function() {
+            document.getElementById('birthday-message').style.display = 'block';
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
